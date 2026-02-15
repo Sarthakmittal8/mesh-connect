@@ -2,10 +2,9 @@
 
 ## 🌐 Rewiring Communication for the Connected World.
 
-Mesh Connect is a next-generation, AI-powered chat application designed to create intelligent, adaptive communication networks. By harnessing advanced sentiment analysis and Google's Generative AI, Mesh Connect transforms the way you interact — dynamically adjusting to the tone and context of conversations. Whether it's personal, professional, or anything in between, Mesh Connect weaves seamless, emotionally-aware dialogue into every connection — just like a mesh, built to adapt and strengthen with every link.
+Mesh Connect is a next-generation, chat application designed to create intelligent, adaptive communication networks. By harnessing advanced sentiment analysis, Mesh Connect transforms the way you interact — dynamically adjusting to the tone and context of conversations. Whether it's personal, professional, or anything in between, Mesh Connect weaves seamless — just like a mesh, built to adapt and strengthen with every link.
 ## ✨ Key Features
 
-- **🧠 AI-Powered Emotion Detection**: Utilizes Google's Generative AI to analyze conversation sentiment in real-time
 - **🎨 Adaptive UI**: Automatically transforms themes based on 30+ detected emotional states
 - **⚡ Real-Time Messaging**: Low-latency communication with Socket.io
 - **🔒 Secure Authentication**: JWT-based authentication with HTTP-only cookies and CSRF protection
@@ -28,7 +27,6 @@ Mesh Connect is a next-generation, AI-powered chat application designed to creat
 - **Database**: MongoDB with Mongoose ODM
 - **Authentication**: JWT implementation with secure HTTP-only cookies
 - **Real-time**: Socket.io server implementation with user tracking
-- **AI Integration**: Google's Generative AI (Gemini 2.0 Flash model)
 - **Cloud Storage**: Cloudinary for image management
 - **Security**: CORS configuration, input validation, and error handling
 
@@ -46,7 +44,6 @@ Create a `.env` file in the project root with the following variables:
 MONGODB_URI=your_mongodb_connection_string
 PORT=5001
 JWT_SECRET=your_jwt_secret
-GOOGLE_API_KEY=your_google_ai_api_key
 CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
 CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
@@ -80,8 +77,6 @@ npm start
 
 The application will be available at `http://localhost:5001`
 
-## 🧪 AI Sentiment Classification
-
 Mesh Connect can detect and respond to 30+ emotional states including:
 - Happy, Sad, Angry, Neutral
 - Urgent, Casual, Professional
@@ -95,7 +90,6 @@ Each emotional state triggers a unique theme transformation, creating a visually
 ## 🔄 Workflow
 
 1. User messages are securely transmitted in real-time via Socket.io
-2. Google's Generative AI analyzes conversation sentiment
 3. The UI theme adapts instantly to match the detected emotional context
 4. All messages are persisted to MongoDB for future reference
 5. Images are optimized and stored in Cloudinary's cloud infrastructure
